@@ -6,7 +6,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "node bin/server.js",
-    "build": "netlify deploy --prod",
+    "build": "node ace build",
+    "netlify": "netlify deploy --prod",
     "dev": "node ace serve --watch",
     "test": "node ace test",
     "lint": "eslint .",
@@ -58,6 +59,7 @@
     "@adonisjs/vite": "^2.0.2",
     "@vinejs/vine": "^1.7.1",
     "edge.js": "^6.0.1",
+    "netlify-cli": "^17.15.6",
     "reflect-metadata": "^0.2.1"
   },
   "eslintConfig": {
